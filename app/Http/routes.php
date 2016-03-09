@@ -10,5 +10,9 @@ Route::group(['middleware' => ['web']], function () {
     Route::delete('photos/{id}','PhotosController@destroy');
 
     Route::auth();
+
+    Route::get('about',function(){
+        return 'about pages';
+    });
     
 });
